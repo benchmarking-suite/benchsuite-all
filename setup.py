@@ -17,13 +17,12 @@
 # Developed in the ARTIST EU project (www.artist-project.eu) and in the
 # CloudPerfect EU project (https://cloudperfect.eu/)
 
-from distutils.core import setup
 import os
-
+from setuptools import setup
 
 setup(
     name='benchsuite.all',
-    version='2.0.0.b0',
+    version='2.0.0b1',
 
     description='A meta-package to install all the benchmarking suite packages',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
@@ -48,8 +47,6 @@ setup(
         'Operating System :: Unix'
     ],
     keywords='benchmarking cloud testing performance',
-    packages=[],
-    namespace_packages=['benchsuite'],
 
     install_requires=['benchsuite.core', 'benchsuite.stdlib', 'benchsuite.rest', 'benchsuite.cli', 'benchsuite.backends']
 
