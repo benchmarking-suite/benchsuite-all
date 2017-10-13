@@ -22,7 +22,7 @@ from setuptools import setup
 
 setup(
     name='benchsuite.all',
-    version='2.0.0b1',
+    version='2.1.0',
 
     description='A meta-package to install all the benchmarking suite packages',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
